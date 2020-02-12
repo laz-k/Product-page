@@ -1,2 +1,2 @@
 # Product-page
-Product page for practice
+Product page for freeCodeCamp's "Responsive Web Design Projects"
