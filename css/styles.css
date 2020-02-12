@@ -1,0 +1,19 @@
+body {
+    font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(248, 248, 188);
+    box-sizing: border-box;
+}
+
+#header {
+    background: gray;
+}
+
+#header-img img{
+    width: 150px;
+    background: black;
+}
+
+#nav-bar ul li {
+    list-style: none;
+    display: inline-block;
+}
