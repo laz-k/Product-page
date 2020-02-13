@@ -1,19 +1,96 @@
-body {
-    font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
-    background: rgb(248, 248, 188);
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-#header {
-    background: gray;
+
+body {
+    font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(248, 248, 188);
+    line-height: 1.7;
 }
 
-#header-img img{
-    width: 150px;
+#nav-bar {
     background: black;
+    color: white;
+    overflow: auto;
+}
+
+#header-img {
+    float: left;
+    width: 200px;
+    padding: 15px;
+}
+
+#nav-bar ul {
+    float: right;
+    list-style: none;
 }
 
 #nav-bar ul li {
-    list-style: none;
-    display: inline-block;
+    float: left;
 }
+
+#nav-bar ul li a {
+    display: block;
+    padding: 45px;
+    text-decoration: none;
+    color: gold;
+}
+
+
+
+@media (min-width: 800px) {
+.container {
+    display: flex;
+    
+    padding: 
+}
+}
+
+@media (min-width: 799px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        padding: 20px;
+    }
+    }
+
+#product-1, #product-2, #product-3 {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-radius: 15px;
+    border: black solid 3px;
+    margin: 0 10px;
+    padding: 20px;
+}
+
+#product-1 h4, #product-2 h4, #product-3 h4 {
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#product-1 img, #product-2 img, #product-3 img {
+    height: 200px;
+    margin: auto;
+}
+
+#product-1 p, #product-2 p, #product-3 p {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.form h5 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+
