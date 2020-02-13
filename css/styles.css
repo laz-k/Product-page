@@ -45,7 +45,7 @@ body {
 .container {
     display: flex;
     
-    padding: 
+   
 }
 }
 
@@ -58,7 +58,7 @@ body {
     }
     }
 
-#product-1, #product-2, #product-3 {
+.products {
     background-color: orange;
     display: flex;
     flex-direction: column;
@@ -69,18 +69,18 @@ body {
     padding: 20px;
 }
 
-#product-1 h4, #product-2 h4, #product-3 h4 {
+.products h4 {
     align-self: center;
     font-size: 1.2rem;
     font-weight: 700;
 }
 
-#product-1 img, #product-2 img, #product-3 img {
+.products img {
     height: 200px;
     margin: auto;
 }
 
-#product-1 p, #product-2 p, #product-3 p {
+.products p {
     color: white;
     text-align: center;
     padding-top: 10px;
