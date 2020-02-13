@@ -5,6 +5,7 @@
 }
 
 
+
 body {
     font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
     background: rgb(248, 248, 188);
@@ -18,13 +19,12 @@ body {
 
 #nav-bar {
     background: black;
-    color: white;
     overflow: auto;
 }
 
 #header-img {
     float: left;
-    width: 200px;
+    width: 180px;
     padding: 15px;
 }
 
@@ -37,11 +37,12 @@ body {
     float: left;
 }
 
-#nav-bar ul li a {
-    display: block;
-    padding: 20px;
+ul li a {
+    display: inline-block;
+    padding-top: 40px;
+    padding-right: 20px;
     text-decoration: none;
-    color: gold;
+    color: white;
 }
 
 #characteristics {
@@ -97,13 +98,25 @@ body {
 .products p {
     color: white;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
     font-weight: 500;
+}
+
+.buy-now-btn {
+    width: 120px;
+    height: 30px;
+    margin: 5px auto;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: rgb(255, 255, 255);
+    outline-style: none;
 }
 
 .form h5 {
     text-align: center;
     font-size: 1.2rem;
+    margin-top: 80px;
+    margin-bottom: 20px;
 }
 
 #email {
@@ -111,7 +124,7 @@ body {
     margin: auto;
     padding-left: 20px;
     width:  50vw;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 3;
     border-radius: 6px;
     border: none;
@@ -127,6 +140,20 @@ body {
     height: 40px;
     border-radius: 6px;
     font-size: 1rem;
+    font-weight: 700;
+    outline-style: none;
+    background-color:orange ;
     
 }
 
+#footer {
+    background-color: black;
+    height: 60px;
+    margin-top: 50px;
+}
+
+#footer p {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
