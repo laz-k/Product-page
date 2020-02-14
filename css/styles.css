@@ -46,7 +46,17 @@ ul li a {
 }
 
 #characteristics {
+    display: block;
     padding-top: 15%;
+    
+}
+
+#health-benefits {
+    margin-top: 10vh;
+}
+
+#health-benefits h3 {
+    text-align: center;
 }
 
 #video {
@@ -54,6 +64,10 @@ ul li a {
     margin: 20px auto;
     border-radius: 15px;
     border: black solid 3px;
+}
+
+#products {
+    
 }
 
 @media (min-width: 800px) {
@@ -112,6 +126,12 @@ ul li a {
     outline-style: none;
 }
 
+.form {
+    position: relative;
+    background-color: burlywood;
+    height: 200px
+}
+
 .form h5 {
     text-align: center;
     font-size: 1.2rem;
@@ -148,7 +168,7 @@ ul li a {
 
 #footer {
     background-color: black;
-    height: 60px;
+    height: 10vh;
     margin-top: 50px;
 }
 
