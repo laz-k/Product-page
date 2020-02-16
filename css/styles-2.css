@@ -8,6 +8,7 @@
 
 /* base styles */
 body {
+  /* max-width: 1300px; */
   background: #faeed2;
   font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -206,8 +207,8 @@ body {
     margin-top: 1em;
   }
 
-  .container :nth-child(2) {
-    margin-top: 1em;
+  .container :last-child {
+    margin-top: 0;
   }
 }
 
@@ -243,7 +244,7 @@ body {
 
   #characteristics {
     display: block;
-    padding-top: 15%;
+    padding-top: 140px;
   }
 
   #health-benefits {
@@ -270,8 +271,8 @@ body {
     margin-top: 1em;
   }
 
-  .container :nth-child(2) {
-    margin-top: 1em;
+  .container :last-child {
+    margin-top: 0;
   }
 }
 
@@ -283,10 +284,22 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  #characteristics {
+    display: block;
+    padding-top: 140px;
+  }
+
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
+
+  #characteristics {
+    display: block;
+    padding-top: 140px;
+  }
+
   #health-benefits {
     margin: 6em auto;
     max-width: 900px;
@@ -296,9 +309,11 @@ body {
 
   .container {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: green;
+    padding: 50px;
   }
 
   .products {
@@ -309,10 +324,10 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1em;
-    margin-top: 1em;
+    /* margin-top: 1em; */
   }
 
-  .container :last-child {
+  /* .container :last-child {
     margin-top: 2em;
-  }
+  } */
 }
