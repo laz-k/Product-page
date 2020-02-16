@@ -48,16 +48,16 @@ ul li a {
 #characteristics {
     display: block;
     padding-top: 15%;
-    
+
 }
 
 #health-benefits {
     margin-top: 10vh;
 }
 
-#health-benefits h3 {
+/* #health-benefits h3 {
     text-align: center;
-}
+} */
 
 #video {
     display: block;
@@ -73,7 +73,7 @@ ul li a {
         flex-wrap: wrap;
         margin: 20px;
         padding: 20px;
-    }
+    
     }
 
 .products {
@@ -152,7 +152,7 @@ ul li a {
     font-weight: 700;
     outline-style: none;
     background-color:orange ;
-    
+
 }
 
 #footer {
