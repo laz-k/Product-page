@@ -1,168 +1,291 @@
+/* reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
 }
-
-
-
+/* base styles */
+.page-wrapper {
+	background: #faeed2;
+	display: block;
+	margin: auto;
+	max-width: 1600px;
+}
 body {
-    font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
-    background: rgb(248, 248, 188);
-    line-height: 1.7;
+	background: #faeed2;
+	font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.5;
 }
-
 #header {
-    position: fixed;
-    width: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 }
-
 #nav-bar {
-    background: black;
-    overflow: auto;
+	background: black;
+	overflow: auto;
+	width: 100%;
 }
-
-#header-img {
-    float: left;
-    width: 180px;
-    padding: 15px;
+/* mobile styles */
+@media screen and (min-width: 320px) {
+	#header-img {
+		display: block;
+		margin: 0 auto;
+		padding: 15px;
+		width: 13em;
+	}
+	#nav-bar ul {
+		display: none;
+	}
+	#characteristics {
+		padding: 9em 1em 1em 1em;
+	}
+	#health-benefits {
+		padding: 1em;
+	}
+	#health-benefits h3 {
+		font-size: 1em;
+		padding: 0 1em;
+		text-align: center;
+	}
+	.video-wrapper {
+		height: 0;
+		padding-bottom: 50%;
+		padding-top: 25px;
+		position: relative;
+	}
+	.video-wrapper iframe {
+		border: black solid 1px;
+		border-radius: 15px;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 1em;
+	}
+	.products {
+		align-self: center;
+		background-color: orange;
+		border: black solid 3px;
+		border-radius: 15px;
+		display: flex;
+		flex-direction: column;
+		padding: 1em;
+	}
+	.container :nth-child(2) {
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+	.products h4 {
+		align-self: center;
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+	.products img {
+		height: 12em;
+		margin: 0 auto;
+	}
+	.products p {
+		color: white;
+		font-weight: 500;
+		padding: 5px;
+		text-align: center;
+	}
+	.buy-now-btn {
+		align-self: center;
+		background-color: rgb(255, 255, 255);
+		border-radius: 5px;
+		box-shadow: 0 0 1px 1px black;
+		font-size: 0.9rem;
+		height: 30px;
+		margin: 5px auto;
+		outline-style: none;
+		width: 50%;
+	}
+	.buy-now-btn:hover {
+		font-size: 1em;
+		font-weight: 700;
+	}
+	.form {
+		height: 200px;
+	}
+	.form h5 {
+		font-size: 1.2rem;
+		margin-bottom: 20px;
+		margin-top: 80px;
+		text-align: center;
+	}
+	#email {
+		border: none;
+		border-radius: 6px;
+		display: block;
+		font-size: 0.9rem;
+		line-height: 3;
+		margin: auto;
+		outline-style: none;
+		padding-left: 20px;
+		width: 90%;
+	}
+	.btn {
+		background-color: orange;
+		border-radius: 6px;
+		display: block;
+		font-size: 1rem;
+		font-weight: 700;
+		height: 40px;
+		margin: 20px auto;
+		outline-style: none;
+		width: 120px;
+	}
+	.btn:hover {
+		color: white;
+	}
+	#footer {
+		background-color: black;
+		height: 5em;
+		margin-top: 50px;
+	}
+	#footer p {
+		color: white;
+		padding-top: 20px;
+		text-align: center;
+	}
 }
-
-#nav-bar ul {
-    float: right;
-    list-style: none;
+/* small tablet styles */
+@media screen and (min-width: 550px) {
+	#health-benefits {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		max-width: 480px;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.products {
+		align-self: center;
+		background-color: orange;
+		border: black solid 3px;
+		border-radius: 15px;
+		display: flex;
+		flex-direction: column;
+		margin-top: 1em;
+		padding: 1em;
+	}
+	.container :last-child {
+		margin-top: 0;
+	}
 }
-
-#nav-bar ul li {
-    float: left;
+/* medium tablet styles */
+@media screen and (min-width: 768px) {
+	#header-img {
+		float: left;
+		padding: 15px;
+		width: 200px;
+	}
+	#nav-bar ul {
+		display: block;
+		float: right;
+		list-style: none;
+	}
+	#nav-bar ul li {
+		float: left;
+	}
+	ul li a {
+		color: rgb(248, 248, 188);
+		display: inline-block;
+		padding-right: 20px;
+		padding-top: 45px;
+		text-decoration: none;
+	}
+	ul li a:hover {
+		color: #d5bd20;
+	}
+	#characteristics {
+		display: block;
+		padding-top: 140px;
+	}
+	#health-benefits {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		max-width: 650px;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.products {
+		align-self: center;
+		background-color: orange;
+		border: black solid 3px;
+		border-radius: 15px;
+		display: flex;
+		flex-direction: column;
+		margin-top: 1em;
+		padding: 1em;
+	}
+	.container :last-child {
+		margin-top: 0;
+	}
 }
-
-ul li a {
-    display: inline-block;
-    padding-top: 40px;
-    padding-right: 20px;
-    text-decoration: none;
-    color: white;
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px) {
+	#health-benefits {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		max-width: 700px;
+	}
+	#characteristics {
+		display: block;
+		padding-top: 140px;
+	}
 }
-
-#characteristics {
-    display: block;
-    padding-top: 15%;
-
-}
-
-#health-benefits {
-    margin-top: 10vh;
-}
-
-/* #health-benefits h3 {
-    text-align: center;
-} */
-
-#video {
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    border: black solid 3px;
-}
-
-
-@media (min-width: 799px) {
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 20px;
-        padding: 20px;
-    
-    }
-
-.products {
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    border-radius: 15px;
-    border: black solid 3px;
-    margin: 0 10px;
-    padding: 20px;
-}
-
-.products h4 {
-    align-self: center;
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.products img {
-    height: 200px;
-    margin: auto;
-}
-
-.products p {
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-weight: 500;
-}
-
-.buy-now-btn {
-    width: 120px;
-    height: 30px;
-    margin: 5px auto;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    background-color: rgb(255, 255, 255);
-    outline-style: none;
-}
-
-.form {
-    position: relative;
-    background-color: burlywood;
-    height: 200px
-}
-
-.form h5 {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-top: 80px;
-    margin-bottom: 20px;
-}
-
-#email {
-    display: block;
-    margin: auto;
-    padding-left: 20px;
-    width:  50vw;
-    font-size: 0.9rem;
-    line-height: 3;
-    border-radius: 6px;
-    border: none;
-    outline-style: none;
-}
-
-
-
-.btn {
-    display: block;
-    margin: 10px auto;
-    width: 120px;
-    height: 40px;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: 700;
-    outline-style: none;
-    background-color:orange ;
-
-}
-
-#footer {
-    background-color: black;
-    height: 10vh;
-    margin-top: 50px;
-}
-
-#footer p {
-    color: white;
-    text-align: center;
-    padding-top: 20px;
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+	body {
+		background-color: white;
+	}
+	#header {
+		max-width: 1600px;
+		position: fixed;
+		z-index: 1;
+	}
+	#characteristics {
+		display: block;
+		padding-top: 140px;
+	}
+	#health-benefits {
+		display: flex;
+		flex-direction: column;
+		margin: 1em auto;
+		max-width: 900px;
+	}
+	.container {
+		align-items: stretch;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		padding: 10px;
+	}
+	.products {
+		align-self: center;
+		background-color: orange;
+		border: black solid 3px;
+		border-radius: 15px;
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 1em;
+	}
 }
